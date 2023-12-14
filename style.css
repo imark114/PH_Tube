@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sort-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#blog-btn{
+    background: #FF1F3D;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.category-btn{
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+}
+.active{
+    background: #FF1F3D;
+    color: white;
+}
+.avatar{
+    height: 50px;
+    border-radius: 50%;
+}
+.author-avatar{
+    height: 70px;
+    border-radius: 50%;
+}
+.post-time{
+    bottom: 15px;
+    right: 20px;
+    color: white;
+    background: #000000da;
+    padding: 1px 6px;
+    border-radius: 6px;
+}
+.empty-img{
+    width: 400px;
+    height: auto;
+}

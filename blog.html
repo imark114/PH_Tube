@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="bg-black">
+    <div class="container mt-5">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fs-3 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Discuss the Scope of var, let, and const.
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <h4>VAR</h4>
+              <ul>
+                <li>
+                  <strong>Scope: </strong> Function scope. This means a var
+                  variable declared inside a function is accessible anywhere
+                  within that function, including nested functions. However, if
+                  declared outside a function, it becomes globally accessible.
+                </li>
+                <li>
+                  <strong>Reassignment:</strong> Allowed. You can freely update
+                  the value of a var variable within its scope.
+                </li>
+                <li>
+                  <strong>Hoisting:</strong> var declarations are hoisted to the
+                  top of their scope. This means they are accessible before
+                  their actual declaration, but their value remains undefined
+                  until the declaration is encountered.
+                </li>
+              </ul>
+              <h4>LET</h4>
+              <ul>
+                <li>
+                  <strong>Scope:</strong> Block scope. This means a let variable
+                  is only accessible within the block (e.g., curly braces) in
+                  which it is declared, including nested blocks. It is not
+                  accessible outside that block.
+                </li>
+                <li>
+                  <strong>Reassignment:</strong> Allowed. Similar to var, you
+                  can update the value of a let variable within its scope.
+                </li>
+                <li>
+                  <strong>Hoisting:</strong> let declarations are not hoisted.
+                  They are only accessible after their declaration is
+                  encountered.
+                </li>
+              </ul>
+              <h4>CONST</h4>
+              <ul>
+                <li><strong>Scope:</strong> Block scope, similar to let.</li>
+                <li>
+                  <strong>Reassignment:</strong> Not allowed. Unlike var and
+                  let, you cannot change the value of a const variable after its
+                  declaration. This helps ensure data integrity and prevents
+                  unexpected behavior.
+                </li>
+                <li>
+                  <strong>Hoisting:</strong> Similar to let, const declarations
+                  are not hoisted.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fs-3 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Tell Us the use case of null and undefined.
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <h4>NULL</h4>
+              <ul>
+                <li>
+                  <strong>Intentionally empty value:</strong> Used to explicitly
+                  indicate that a variable has no assigned value, but should
+                  exist in the code. For example, an array element might be set
+                  to null initially, to be filled later
+                </li>
+                <li>
+                  <strong>Object properties:</strong> Can be assigned to object
+                  properties to indicate their absence. Accessing a non-existent
+                  property on an object will return undefined, while accessing a
+                  null property will return null itself.
+                </li>
+              </ul>
+              <h4>UNDEFINED</h4>
+              <ul>
+                <li>
+                  <strong>Uninitialized variables:</strong> When a variable is
+                  declared but not assigned a value, its value is undefined.
+                  Accessing such a variable will result in a runtime error.
+                </li>
+                <li>
+                  <strong>Object properties:</strong> Accessing a non-existent
+                  property on an object will return undefined, unless explicitly
+                  set to null.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fs-3 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              What do you mean by REST API?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              A REST API, also known as RESTful API, is a type of application
+              programming interface (API) that follows the principles of the
+              Representational State Transfer (REST) architectural style. It's a
+              set of guidelines for designing and developing web services that
+              are
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-lg text-center mt-2"  href="./index.html">Back to Home</a>
+    </div>
+  </body>
+</html>
